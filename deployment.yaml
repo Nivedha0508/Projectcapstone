@@ -5,7 +5,7 @@ metadata:
   labels:
     app: finsecure-pay
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: finsecure-pay
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: finsecure-pay
-        image: kiruba11111985/finsecure-pay:latest
+        image: nivedev58/finsecure-pay:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
